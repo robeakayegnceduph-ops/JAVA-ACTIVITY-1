@@ -1,0 +1,56 @@
+act 4
+public class RightAngleTriangle {
+    public static void main(String[] args) {
+        int rows = 6;    
+        int column = 5;  
+
+        for (int i = 1; i <= rows; i++) {
+            
+            int starsToPrint = (i > column) ? column : i;
+
+            for (int j = 1; j <= starsToPrint; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+act 5
+public class InvertedRightAngleTriangle { 
+    public static void main(String[] args) { 
+        int rows = 6; 
+        int column = 5; 
+        
+        for (int i = rows; i >= 1; i--) { 
+
+            int starsToPrint = (i > column) ? column : i; 
+            
+            for (int j = 1; j <= starsToPrint; j++) { 
+                System.out.print(" * "); 
+            } 
+            System.out.println(); 
+        } 
+    } 
+}
+
+act 6
+public class Pyramind { 
+    public static void main(String[] args) {
+        int column = 7; 
+        int rows = 7;   
+
+        for (int i = 0; i < rows; i++) {
+            
+            for (int j = 0; j < rows - i - 1; j++) {
+                System.out.print(" ");
+            }
+            
+            for (int k = 0; k <= i; k++) {
+                System.out.print(" * ");
+            }
+    
+            System.out.println();
+        }
+    }
+}
